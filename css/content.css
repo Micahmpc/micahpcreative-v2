@@ -152,12 +152,12 @@
 
 #lohe {border-bottom: 10px solid rgba(58,81,143,1); }
 #lohe .project-content .overlay {
-  background: linear-gradient(to bottom, rgba(58,81,143,0.5) 0%,rgba(58,81,143,1) 100%);
+  background: linear-gradient(to bottom, rgba(58,81,143,0.3) 0%,rgba(58,81,143,1) 100%);
 }
 
 #littleleague {border-bottom: 10px solid rgba(206,5,5,1); }
 #littleleague .project-content .overlay {
-  background: linear-gradient(to bottom, rgba(206,5,5,0.5) 0%,rgba(206,5,5,1) 100%);
+  background: linear-gradient(to bottom, rgba(206,5,5,0.25) 0%,rgba(206,5,5,1) 100%);
 }
 
 #prep {border-bottom: 10px solid rgba(232,119,34,1);}
@@ -305,22 +305,6 @@
     padding: 0 6px;
   }
 
-  footer {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: block;
-    text-align: center;
-  }
-
-  footer .left {
-    padding-bottom: 20px;
-  }
-
-  footer a {
-    padding: 5px;
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -334,8 +318,9 @@
     width: 90%;
   }
 
-  footer a {
-    display: block;
+  .project-box .project-content p {
+    font-size: 1.125rem;
+    max-width: 80%;
   }
 
 }
