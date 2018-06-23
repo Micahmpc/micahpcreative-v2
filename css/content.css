@@ -1,5 +1,5 @@
 #hp-hero {
-    background-image: url(../assets/images/hp_background_mob.jpg);
+    background-image: url(../assets/images/hp_background_desk.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,28 +17,325 @@
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.92));
-
 }
 
-.bgtest {
-  height: 2500px;
+#homepage .howzit {
+  background-color: rgba(0,0,0,.25);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 55px;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
+#homepage .howzit h1 {
+  color: #fff;
+}
+
+#homepage .howzit h6 {
+  color: #00D3FF;
+  font-weight: 400;
+}
+
+#homepage .hp_intro_highlight {
+  font-weight: 600;
+  color: #fff;
+}
+
+#homepage .tile {
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.35));
+  text-align: center;
+  display: block;
+  justify-content: center;
 }
 
-.sticky + .bgtest {
-  padding-top: 71px;
+#project-links .tile {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
+.project-box{
+  width: 24.75%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  perspective:1000px;
+  -webkit-perspective:1000px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+
+.project-box a {
+  color: #fff;
+}
+
+.project-icon{
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  transition: all .5s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-content{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  transition: all .5s ease;
+  background-color: #474747;
+  backface-visibility:hidden;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(110px) rotateX(-90deg);
+  -moz-transform: translateY(110px) rotateX(-90deg);
+  -ms-transform: translateY(110px) rotateX(-90deg);
+  -o-transform: translateY(110px) rotateX(-90deg);
+  transform: translateY(110px) rotateX(-90deg);
+}
+
+.project-content .overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.project-content .cell {
+  z-index: 100;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+
+.project-content .skills img {
+  height: 36px;
+  padding: 0 6px;
+}
+
+.project-box .project-icon .front-content h4, .project-box .project-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 93%;
+  margin: 0 auto;
+}
+
+.project-box .project-content h4 {
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.project-box .project-content p {
+  margin:0 auto;
+  width: 70%;
+  font-weight: 300;
+}
+
+#aetlas {border-bottom: 10px solid rgba(0,193,156,1); }
+#aetlas .project-content .overlay {
+  background: linear-gradient(to bottom, rgba(0,193,156,0.5) 0%,rgba(0,193,156,1) 100%);
+}
+
+#lohe {border-bottom: 10px solid rgba(58,81,143,1); }
+#lohe .project-content .overlay {
+  background: linear-gradient(to bottom, rgba(58,81,143,0.5) 0%,rgba(58,81,143,1) 100%);
+}
+
+#littleleague {border-bottom: 10px solid rgba(206,5,5,1); }
+#littleleague .project-content .overlay {
+  background: linear-gradient(to bottom, rgba(206,5,5,0.5) 0%,rgba(206,5,5,1) 100%);
+}
+
+#prep {border-bottom: 10px solid rgba(232,119,34,1);}
+#prep .project-content .overlay {
+  background: linear-gradient(to bottom, rgba(232,119,34,0.5) 0%,rgba(232,119,34,1) 100%);
+}
+
+
+.aetlas{
+  background: url(../assets/images/aetlas_hp_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lohe{
+  background: url(../assets/images/lohe_hp_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.littleleague{
+  background: url(../assets/images/littleleague_hp_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prep{
+  background: url(../assets/images/prep_hp_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-box:hover .project-icon{
+  opacity: 0;
+  -webkit-transform: translateY(-110px) rotateX(90deg);
+  -moz-transform: translateY(-110px) rotateX(90deg);
+  -ms-transform: translateY(-110px) rotateX(90deg);
+  -o-transform: translateY(-110px) rotateX(90deg);
+  transform: translateY(-110px) rotateX(90deg);
+}
+.project-box:hover .project-content {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+
+
+
+
+
+
+
+
+#project-links .hide {
+  opacity: 0;
+}
+
+#project-links .hide:hover {
+  opacity: 1;
+  transition: 200ms ease-in;
+}
+
+#homepage #project-links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .project-box .project-icon .front-content h4, .project-box .project-content h4 {
+    font-size:1.25rem ;
+    max-width: 85%;
+    width: fit-content;
+  }
+
+  .project-box .project-content p {
+    font-size: 1rem;
+  }
+
+  .project-box .project-content img {
+    height: 28px;
+    padding: 0 3px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
 
   #hp-hero {
-      background-image: url(../assets/images/hp_background_desk.jpg);
+      background-image: url(../assets/images/hp_background_mob.jpg);
+  }
+
+  #homepage .howzit {
+    padding: 40px 60px;
+    width: 70%;
+  }
+
+  #homepage #project-links {
+    position: inherit;
+  }
+
+  #project-links .tile {
+    display: block;
+  }
+
+  .project-box{
+    width: 90%;
+    float: none;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .project-box a {
+    color: #fff;
+  }
+
+  .project-icon{
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project-box .project-icon .front-content h4, .project-box .project-content h4 {
+    font-size:1.65rem ;
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  .project-box .project-content p {
+    font-size: 1.125rem;
+    max-width: 50%;
+  }
+
+  .project-box .project-content img {
+    height: 36px;
+    padding: 0 6px;
+  }
+
+  footer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+  }
+
+  footer .left {
+    padding-bottom: 20px;
+  }
+
+  footer a {
+    padding: 5px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #hp-hero {
+      background-image: url(../assets/images/hp_background_mob.jpg);
+  }
+
+  #homepage .howzit {
+    padding: 40px 20px;
+    width: 90%;
+  }
+
+  footer a {
+    display: block;
   }
 
 }
