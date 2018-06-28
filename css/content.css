@@ -19,21 +19,37 @@
   background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.92));
 }
 
-#homepage .howzit {
+#fourohfour #hp-hero {
+    background-image: url(../assets/images/404.jpg);
+}
+
+#homepage nav .right a, #fourohfour nav .right a {
+  color: #fff;
+}
+
+#homepage nav .right a, #fourohfour nav .right a:hover {
+  color: #00d3ff;
+}
+
+#homepage footer {
+  background-color: transparent;
+}
+
+#homepage .howzit, #fourohfour .howzit {
   background-color: rgba(0,0,0,.25);
   text-align: center;
   box-sizing: border-box;
   padding: 20px 55px;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
 }
 
-#homepage .howzit h1 {
+#homepage .howzit h1, #fourohfour .howzit h2 {
   color: #fff;
 }
 
-#homepage .howzit h6 {
+#homepage .howzit h6, #fourohfour .howzit h6 {
   color: #00D3FF;
   font-weight: 400;
 }
@@ -206,12 +222,6 @@
 
 
 
-
-
-
-
-
-
 #project-links .hide {
   opacity: 0;
 }
@@ -223,7 +233,7 @@
 
 #homepage #project-links {
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
   width: 100%;
 }
 
@@ -242,6 +252,11 @@
   .project-box .project-content img {
     height: 28px;
     padding: 0 3px;
+  }
+
+  #homepage .howzit {
+    padding: 40px 60px;
+    width: 60%;
   }
 
 }

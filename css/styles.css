@@ -94,7 +94,7 @@ nav .left img {
 }
 
 nav .right a {
-  color: #fff;
+  color: #3d3d3d;
   text-decoration: none;
   padding: 3px 5px;
   margin-left: 10px;
@@ -103,17 +103,27 @@ nav .right a {
 
 nav a:hover {
   color: #00D3FF;
-  transition: .5s ease;
+  transition: .25s ease;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding:20px;
+  background-color: #000;
+}
+
+footer h6 {
+  color: #fff;
+  font-weight: 400;
 }
 
 footer a {
+  font-size: 1rem;
   text-decoration: none;
   color: #fff;
   padding: 0 10px;
