@@ -1,4 +1,4 @@
-#hp-hero {
+#hp-hero, #contact-hero {
     background-image: url(../assets/images/hp_background_desk.jpg);
     height: 100%;
     background-position: center;
@@ -11,7 +11,7 @@
     z-index: -100;
 }
 
-#hp-hero .container {
+#hp-hero .container, #contact-hero .container {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,11 +19,15 @@
   background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.92));
 }
 
-#fourohfour #hp-hero {
+#contact #contact-hero .container {
+  background: transparent;
+}
+
+#fourohfour #hp-hero, #contact #contact-hero {
     background-image: url(../assets/images/404.jpg);
 }
 
-#homepage nav .right a, #fourohfour nav .right a {
+#homepage nav .right a, #fourohfour nav .right a, #contact nav .right a {
   color: #fff;
 }
 
@@ -31,7 +35,7 @@
   color: #00d3ff;
 }
 
-#homepage footer {
+#homepage footer, #contact footer {
   background-color: transparent;
 }
 
@@ -220,8 +224,6 @@
   transform: rotateX(0);
 }
 
-
-
 #project-links .hide {
   opacity: 0;
 }
@@ -236,6 +238,74 @@
   bottom: 60px;
   width: 100%;
 }
+
+/***** CONTACT PAGE *****/
+
+#contact-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+    z-index: 100;
+}
+
+#contact-main .contact-cell {
+  background: -moz-linear-gradient(45deg, rgba(20,46,129,0.75) 0%, rgba(0,211,255,0.75) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(20,46,129,0.75) 0%,rgba(0,211,255,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(20,46,129,0.75) 0%,rgba(0,211,255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 50px 50px;
+  width: 40%;
+  min-width: 600px;
+}
+
+#contact-main hr {
+  height: 2px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 0;
+  width: 80%;
+  max-width: 444px;
+}
+
+#contact-main h2, #contact-main h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#contact-main .social, #contact-main .contact-direct {
+  margin-top: 20px;
+}
+
+#contact-main a {
+  display: inline-block;
+}
+
+#contact-main .contact-direct a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#contact-main .contact-direct img {
+  height: 75px;
+}
+
+#contact-main .social a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#contact-main .social img {
+  height: 40px;
+}
+
+
 
 @media screen and (max-width: 1200px) {
 
@@ -320,6 +390,19 @@
     padding: 0 6px;
   }
 
+  #contact footer {
+    position: absolute;
+  }
+
+  #contact footer .right {
+    box-sizing: border-box;
+    padding: 0 60px;
+  }
+
+  #contact footer a {
+    display: inline-block;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -336,6 +419,42 @@
   .project-box .project-content p {
     font-size: 1.125rem;
     max-width: 80%;
+  }
+
+  #contact-main {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      z-index: 100;
+      margin: 30px 5% 0;
+  }
+
+  #contact-main .contact-cell {
+    color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    width: auto;
+    min-width: auto;
+  }
+
+  #contact-main .contact-direct a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #contact-main .contact-direct img {
+    height: 65px;
+  }
+
+  #contact-main .social a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #contact-main .social img {
+    height: 35px;
   }
 
 }
