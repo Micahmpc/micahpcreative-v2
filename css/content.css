@@ -1,4 +1,4 @@
-#hp-hero, #contact-hero {
+#hp-hero, #contact-hero, #about-hero {
     background-image: url(../assets/images/hp_background_desk.jpg);
     height: 100%;
     background-position: center;
@@ -31,7 +31,7 @@
   color: #fff;
 }
 
-#homepage nav .right a, #fourohfour nav .right a:hover {
+#homepage nav .right a:hover, #fourohfour nav .right a:hover {
   color: #00d3ff;
 }
 
@@ -45,7 +45,7 @@
   box-sizing: border-box;
   padding: 20px 55px;
   display: block;
-  margin: 0 auto;
+  margin: 4% auto 0;
   width: 45%;
 }
 
@@ -306,6 +306,48 @@
 }
 
 
+/***** ABOUT *****/
+#about #about-hero {
+    background-image: url(../assets/images/pages/about/mp_profile.jpg);
+    z-index: -100;
+}
+
+.resumeme {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #CC98A3;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.resumeme a {
+  padding-top: 5px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#about .hero-right {
+  float: right;
+  width: 45%;
+  margin-top: 30px;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+#about .hero-right p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#about .hero-right a p, #about .hero-right h4 {
+  font-weight: 600;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -394,13 +436,17 @@
     position: absolute;
   }
 
-  #contact footer .right {
+  #contact footer .right, #homepage footer .right {
     box-sizing: border-box;
     padding: 0 60px;
   }
 
-  #contact footer a {
+  #contact footer a, #homepage footer a {
     display: inline-block;
+  }
+
+  #about #about-hero {
+      background-image: url(../assets/images/pages/about/mp_profile_mob.jpg);
   }
 
 }
