@@ -108,6 +108,7 @@
 .contentblock .role {
   text-align: center;
   width: 100%;
+  box-sizing: border-box;
   padding: 30px;
   border-top: 1px solid #868686;
   border-bottom: 1px solid #868686;
@@ -181,6 +182,10 @@ img.lrg-img {
   margin: 50px auto 0;
   position: relative;
   top: 50px;
+}
+
+.lrg-img-offset img, .lrg-img img {
+  max-width: 95%;
 }
 
 #projectnav {
@@ -290,7 +295,7 @@ img.lrg-img {
     padding-bottom: 10px;
 }
 
-#aetlas .tasks .screens img {
+  .tasks .screens img {
     width: 180px;
     margin: 0 5px;
 }
@@ -696,14 +701,20 @@ margin: 0 auto;
     padding: 0 3px;
   }
 
+  .contentblock .role {
+    box-sizing: border-box;
+    max-width: 95%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   #homepage .howzit {
     padding: 40px 60px;
     width: 60%;
   }
 
-  .lrg-img-offset img, .lrg-img img {
-    width: 95%;
-    max-width: 95%;
+  .tasks .screens img {
+      width: 142px;
   }
 
 }
