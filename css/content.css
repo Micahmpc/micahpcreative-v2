@@ -139,7 +139,7 @@ section.features {
 }
 
 div.features {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -147,8 +147,9 @@ div.features {
 }
 
 div.features .feature, div.skillz .skill {
-  width: 300px;
-  padding: 0 50px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 5%;
   text-align: center;
 }
 
@@ -686,6 +687,10 @@ margin: 0 auto;
 
 @media screen and (max-width: 1200px) {
 
+  body, html {
+    overflow-x:inherit;
+  }
+
   .project-box .project-icon .front-content h4, .project-box .project-content h4 {
     font-size:1.25rem ;
     max-width: 85%;
@@ -701,11 +706,21 @@ margin: 0 auto;
     padding: 0 3px;
   }
 
+  .contentblock {
+    max-width: 860px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .contentblock .role {
     box-sizing: border-box;
     max-width: 95%;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .contentblock .right p {
+    padding-right: 30px;
   }
 
   #homepage .howzit {
@@ -738,8 +753,6 @@ margin: 0 auto;
   .contentblock {
     flex-direction: column;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 50px;
   }
 
@@ -758,7 +771,6 @@ margin: 0 auto;
 
   .contentblock .swot-logos img {
     padding-bottom: 50px;
-    width: 260px;
   }
 
   .contentblock .swot-logos img:last-child, div.features .feature:last-of-type {
@@ -769,12 +781,14 @@ margin: 0 auto;
     padding: 50px 40px;
   }
 
-  div.features {
-    flex-direction: column;
-  }
-
   div.features .feature {
     padding-bottom: 50px;
+  }
+
+  div.features .feature, div.skillz .skill {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 15px;
   }
 
 
@@ -1047,12 +1061,29 @@ margin: 0 auto;
     padding: 30px 0;
   }
 
+  .contentblock .right p {
+    padding-right: 20px;
+  }
+
+  div.features {
+    flex-direction: column;
+  }
+
+  div.features .feature {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
   #aetlas #personas img.nomobile {
     display: none;
   }
 
   #aetlas #personas img.nodesk {
     display: initial;
+  }
+
+  #aetlas .features img {
+    height: 110px;
   }
 
 }
