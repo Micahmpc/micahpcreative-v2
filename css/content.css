@@ -62,7 +62,7 @@
   z-index: 1;
   background-color: rgba(0,0,0,.8);
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   position: relative;
 }
 
@@ -161,9 +161,37 @@ div.features .feature, div.skillz .skill {
   height: 70px;
 }
 
+section.greyback {
+  padding-bottom: 100px;
+}
+
 .greyback {
   background-color: #ededed;
   width: 100%;
+}
+
+.picset {
+  width: 100%;
+  padding: 0;
+  margin: 100px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0;
+}
+
+.picset .three img {
+  width: 33.3333%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+img.contentimg {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .lrg-img {
@@ -171,11 +199,12 @@ div.features .feature, div.skillz .skill {
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
+  font-size: 0;
 }
 
 img.lrg-img {
   width: 100%;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .lrg-img-offset {
@@ -252,9 +281,12 @@ img.lrg-img {
   max-width: 1200px;
 }
 
+#aetlas section#personas {
+  padding-bottom: 0;
+}
+
 #aetlas #personas img.nomobile {
   display: initial;
-
 }
 
 #aetlas #personas img.nodesk {
@@ -299,6 +331,64 @@ img.lrg-img {
   .tasks .screens img {
     width: 180px;
     margin: 0 5px;
+}
+
+/***** LOHE *****/
+#lohe .hero {
+  background: url(../assets/images/pages/lohe/hero_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#lohe .hero .hero-left {
+  max-width: 400px;
+}
+
+#lohe .hero .hero-right {
+  padding-right: 1%;
+}
+
+#lohe .hero .hero-right img {
+  height: auto;
+  max-width: 60vw;
+}
+
+#lohe .solution {
+  background: url(../assets/images/pages/lohe/solution.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#lohe #wireframes .picset {
+  text-align: center;
+}
+
+#lohe #wireframes .picset img {
+  display: inline-block;
+  width: 22%;
+  padding: 0 10px 10px;
+}
+
+#lohe #wireframes .picset:last-of-type {
+  display: block;
+  margin-top: 0;
+}
+
+#lohe #wireframes .picset:last-of-type img {
+  display: inline-block;
+  width: 100%;
+  height:auto;
+  padding: 0 10px 10px;
+}
+
+#lohe #designscreens .lrg-img {
+  max-width: 100%;
+}
+
+#lohe #designscreens .lrg-img img {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 
@@ -732,6 +822,11 @@ margin: 0 auto;
       width: 142px;
   }
 
+  /***** LOHE *****/
+  #lohe .hero .hero-back {
+    height: 65vh;
+  }
+
 }
 
 @media screen and (max-width: 960px) {
@@ -1027,6 +1122,10 @@ margin: 0 auto;
   .study .hero .hero-right {
     padding-right: 0;
     margin-bottom: 18px;
+    padding: 0;
+    height: 58vh;
+    display: flex;
+    align-items: center
   }
 
   .study .hero .hero-left {
@@ -1065,6 +1164,14 @@ margin: 0 auto;
     padding-right: 20px;
   }
 
+  .picset {
+    flex-direction: column;
+  }
+
+  .picset .three img {
+    width: 100%;
+  }
+
   div.features {
     flex-direction: column;
   }
@@ -1084,6 +1191,26 @@ margin: 0 auto;
 
   #aetlas .features img {
     height: 110px;
+  }
+
+  #lohe .hero .hero-back {
+    height: auto;
+  }
+
+  #lohe .hero .hero-left {
+    max-width: 100%;
+  }
+
+  #lohe .hero .hero-right img {
+    max-height: 50vh;
+    max-width: 90%;
+    margin: 60px auto 2vh;
+    text-align: center;
+  }
+
+  #lohe #wireframes .picset img {
+    width: 90%;
+    padding: 0 0 5%;
   }
 
 }
