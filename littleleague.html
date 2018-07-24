@@ -1,46 +1,245 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
-    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400,400i,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/content.css">
-    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
-  </head>
-<body id="fourohfour">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,300i,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/content.css">
+  <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+</head>
+<body class="study" id="littleleague">
 
-  <div id="hp-hero">
-    <div class="container">
-    </div>
-  </div>
-  <div class="container">
-
+<div class="container">
+  <div class="navigation">
     <nav>
       <div class="left">
         <a href="index.html">
           <img src="assets/icons/mpc_logo.svg" alt="">
         </a>
+        <a href="index.html">
+          Micah Parker<span class="nomobile"> | Product Designer</span>
+        </a>
       </div>
       <div class="right">
         <a href="index.html">portfolio</a>
-          <a href="about.html">about</a>
-          <a href="contact.html">contact</a>
+        <a href="about.html">about</a>
       </div>
     </nav>
+  </div>
+  <section class="hero">
+    <div class="hero-back">
+      <div class="hero-front">
+        <div class="hero-left">
+          <div class="logos">
+            <img src="assets/icons/pages/littleleague/llbs-logo.svg" alt="">
+            <img src="assets/icons/pages/littleleague/prep-logo.svg" alt="">
+          </div>
+          <h5>League builder platform for Little League of America, with automatic store building and fundraising solution.</h5>
+          <a href="#" class="button">Visit Website</a>
+        </div>
+        <div class="hero-right">
+          <img src="assets/images/pages/littleleague/fundraising_resp.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="scrolldown nomobile">
+      <a href="#maincontent"><img class="fadeInDown animated" src="assets/icons/scrolldown.svg" alt=""></a>
+    </div> -->
+  </section>
 
-    <section class="howzit" style="position:absolute; top:25%; width:100%;">
-      <h2>404 - You've reached a busy signal</h2>
-      <h6 style="max-width:700px; padding: 20px 10px; text-align: center; margin: 0 auto;">I'm working on this page this very moment. Please be patient, and it should be here in a few days. Please feel free to visit another project if you haven't already. Thanks!</h6>
-    </section>
+  <section class="maincontent">
+    <div class="contentblock">
+      <div class="left">
+        <h5>Introduction</h5>
+      </div>
+      <div class="right">
+        <p>
+          I was working at Prep Sportswear as a designer and had been designing and developing all their emails. I was asked to join the development team to build out the front-end of a new platform. They had formed a relationship with Little League of America, and the project was to build a fundraising and management platform, and to build the first subdomain for eventually overhauling Prep's current e-commerce site and starting fresh.
+        </p>
+      </div>
+    </div>
+
+    <div id="role" class="contentblock">
+      <h6 class="role">Development / Information Architecture / Branding / Prototyping</h6>
+      <h6 class="role">3 Engineers / 1 Developer / 1 Visual Designer</h6>
+    </div>
+
+    <div class="contentblock">
+      <div class="left">
+        <h5>Problem</h5>
+      </div>
+      <div class="right">
+        <p>
+          We had two pieces we had to build. The Little League side, and the Prep Sportswear side. The former allowed for league administrators to create their management account, the latter would power a fan gear store for their league - automatically built from the newly created admin account. For the e-commerce side, we had to decide which pieces of the legacy's code base we could and wanted to use, and what we had to build new. For the management side, we had to create the whole system, and link it to the e-commerce side.
+        </p>
+      </div>
+    </div>
+
+    <div class="solution pip">
+      <div class="contentblock">
+        <div class="left">
+          <h5>Solution</h5>
+        </div>
+        <div class="right">
+          <p>
+            We built the management side and new e-commerce as subdomains of the legacy site in order to start fresh but allow room to transition versus having to do a total site swap. The management side was simple and featured only MVP pieces, and the e-commerce site was much the same, though we figured out a lot of the most difficult architecture in the process which was a major goal going into it. Most of the architecture was new with a few dependancies for things like checkout and using some legacy data sets that we placed into the new structure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentblock">
+      <div class="left">
+        <h5>Planning & Setup</h5>
+      </div>
+      <div class="right">
+        <p>
+          We started with major planning meetings to define MVPs, schedules, processes, etc. Once we got started, design was usually just infront of development, which meant that there was a lot of front-end changes as we progressed further into the project and designs were iterated upon.
+        </p>
+        <p>
+          I took the slight lag time until the first designs started coming in to ramp up on Knockout.js which we used to populate the content. I also consulted on the inner-workings of the big pieces of data coming from the legacy site, how they worked, and how they might better work. We had to decide which of these keep, which to scrap completely, and which we wanted to start fresh on.
+        </p>
+      </div>
+    </div>
+
+    <div class="picset">
+      <div class="three">
+        <img src="assets/images/pages/littleleague/wall1.jpg" alt="">
+        <img src="assets/images/pages/littleleague/wall2.jpg" alt="">
+        <img src="assets/images/pages/littleleague/wall3.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="journeys">
+    <div class="contentblock">
+      <div class="left">
+        <h5>User Stories & Journeys</h5>
+      </div>
+      <div class="right">
+        <p>
+          The approach for this project was fairly simple by nature. I defined the basic structure of the website via a basic user journey. This was built using the information from the research on what people wanted to know, and using some behavior psychology I picked up via books I've read. First - top level - we needed to establish a personal connection. Then moving through the information from top down - what kinds of cases do they take, how did the firm handle those and what results did they get, then if all looks good, booking an appointment and preparing for it.
+        </p>
+      </div>
+    </div>
+    <div class="contentblock">
+      <p>Admin Setup / Store Creation</p>
+      <img class="contentimg" src="assets/images/pages/littleleague/admin-setup.png" alt="">
+      <p>Customer / Fan Purchase Path</p>
+      <img class="contentimg" src="assets/images/pages/littleleague/customer-journey.png" alt="">
+    </div>
+  </section>
+
+  <section id="architecture" class="greyback">
+    <div class="contentblock greyback">
+      <div class="left">
+        <h5>Architecture</h5>
+      </div>
+      <div class="right">
+        <p>
+          I helped the engineers figure out a lot of the mappings between product, design, and store datas. We tackled how they were populated, the data sets associated with all the pieces, and how they interacted with each other. The most complex and difficult interaction revolving around color which touched every piece and had to encompass a high level of variance and data points. Much of this work was done via whiteboarding with the engineers who would subsequently build the schemas, and consult with me while we tested if things worked and made sense.
+        </p>
+      </div>
+    </div>
+    <div class="lrg-img">
+      <img class="lrg-img" src="assets/images/pages/littleleague/color_schema.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="testing" class="mbot100">
+    <div class="contentblock">
+      <div class="left">
+        <h5>Development & Prototyping</h5>
+      </div>
+      <div class="right">
+        <p>
+          Once the early designs started coming I was able to start building the bones of the site with HTML/CSS/Bootstrap. The engineers set up the mappings (MVC) and dropped placeholders into my structure for me to properly into the integrate into the design. Occasionally I would need to edit/create new models and controllers as need dictated, so I learned a little C# to be to help ease the engineers duties and my asks from them.
+        </p>
+        <p>
+          As the project got well underway and the architecture was all figured out and structure of the site built, we got deeper into the design of the UI. I worked closely with the Visual Designer on this who was working in Sketch and passing designs off to me. I would them integrate the designs into the site so that everyone had a working prototype to view progress and test the functionality. I'd then report back and demo the site with him to fine tune to match pixel perfect to his comps or suggest revisions as I saw fit.
+        </p>
+      </div>
+    </div>
+    <div class="lrg-img">
+      <img class="lrg-img" src="assets/images/pages/littleleague/web-presentation.png" alt="">
+    </div>
+    <div class="lrg-img">
+      <img class="lrg-img" src="assets/images/pages/littleleague/storepage-showcase.png" alt="">
+    </div>
+    <div class="lrg-img">
+      <img class="lrg-img" src="assets/images/pages/littleleague/designpage-showcase.png" alt="">
+    </div>
+  </section>
+  <section class="greyback">
+    <div class="contentblock greyback">
+      <div class="left">
+        <h5>Testing</h5>
+      </div>
+      <div class="right">
+        <p>
+          We had a few sources of validation for this project. The first - the user testing - was done through company wide demo's. We would walk through the any newly added features or functionality, and demonstrate the site and the user journeys in front of our live-audience. We'd then open up the floor for questions and comments. Not surprisingly, Customer Service usually had the most valuable feedback for us based on what they've learned about our consumers.
+        </p>
+        <p>
+          We also had our dev-ops team managing development, testing, and release sites which allowed us to demo's with individual stakeholders like the Creative Director and Marketing Dept, external SEO consultants, among others.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="branding" class="mbot100">
+    <div class="contentblock">
+      <div class="left">
+        <h5>Branding & Style Guide</h5>
+      </div>
+      <div class="right">
+        <p>
+          In order to alleviate some of the workload of the visual designer, I served as a second designer on the project and was charged with creating and building a style guide for the design of the site. After looking into atomic design, we decided that implementing a real living style guide was too large a task with our engineering resources focused elsewhere. However I still took an atomic approach in handling the branding.
+        </p>
+        <p>
+          We wanted the new sites to be modern - meaning fairly minimalistic in design. So I tasked the Visual Design to stay confined to only a small handful of brand colors for the whole site (team branding colors excluded). The same applied to many of the pieces of the design including typography and font sizes, buttons, forms, and grid. Each larger piece based on the defined pieces of the branding below it. So, atomically speaking, we defined our atoms (colors, typography, and grid), used those to build our molucules (form inputs, buttons, and layout), then up to organisms and so on.
+        </p>
+      </div>
+    </div>
+    <div class="lrg-img">
+      <img class="lrg-img" src="assets/images/pages/littleleague/styleguide.png" alt="">
+    </div>
+  </section>
+  <section id="takeaway" class="greyback">
+    <div class="contentblock greyback">
+      <div class="left">
+        <h5>Takeaway</h5>
+      </div>
+      <div class="right">
+        <p>
+          This project was a major undertaking. We launched 2 new large websites capable of providing creation of stores, and customizing those experiences to each individuals shopper.  I think the project was successful in a lot of ways, and struggled in a lot of ways too. We were able to deconstruct large sets of information with complex mappings and put them back together in a manner that did away with prohibitive system logic. And we provided a new platform and means to update old and build channels into, and was thus scalable at large. In that sense, this project was a complete success.
+        </p>
+        <p>
+          I think where the project stuggled was in the planning. Lack of available resources and time made it so we missed out on some of the valuable work and processes that could have taken the project to the next level like doing more user research and testing, and allowing more time to build the best possible interface. Nonetheless, this project taught me a ton about front end development and how to work under such constraints. I also learned a lot about design systems and how starting at the micro-level and building up can create cohesive and manageable content. This project really forced us to be creative in a lot of our approaches, and flexible in what we did and how we worked.
+        </p>
+      </div>
+    </div>
+  </section>
 
 
+  <section id="projectnav">
+    <a href="#">< Portfolio</a>
+    <a href="#">Return To Top</a>
+    <a href="#">Next Project ></a>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <img src="assets/icons/mpc_logo_dark.svg" alt="">
+      <h6 class="mini">© Copyright Micah Parker 2018</h6>
+      <h6 class="mini">Design & Development by MPC</h6>
+    </div>
+  </footer>
 
   </div>
-
 
 <script src="scripts/global.js"></script>
 </body>

@@ -317,6 +317,10 @@ a.button:hover {
     margin-top: 50px;
   }
 
+  .mbot100 {
+    margin-bottom: 50px;
+  }
+
   footer {
     max-width: 100%;
     margin: 0 auto;
