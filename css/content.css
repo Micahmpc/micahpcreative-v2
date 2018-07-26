@@ -639,6 +639,10 @@ img.lrg-img {
   font-weight: 700;
 }
 
+#homepage .howzit h5 a:hover {
+  color: #00d3ff;
+}
+
 #homepage .howzit a.button {
   margin: 30px;
   font-weight:
