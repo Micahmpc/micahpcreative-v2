@@ -234,11 +234,30 @@ footer img {
 
 footer h6.mini {
   color: #868686;
+  font-weight: 700;
+  font-size: 10px;
 }
 
 footer h6.mini:first-of-type {
-  padding-bottom: 10px;
   color:#fff;
+  font-weight: 400;
+}
+
+footer .social {
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 30px;;
+}
+
+footer .social a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer .social a:hover {
+  color: #00d3ff;
 }
 
 

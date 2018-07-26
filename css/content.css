@@ -36,6 +36,16 @@
   font-weight: 700;
 }
 
+.contentblock .right a {
+  color: #008297;
+  font-weight: 700;
+}
+
+.contentblock .right a:hover, .contentblock .left a:hover {
+  color: #00d3ff;
+  transition: .125s ease;
+}
+
 .contentblock .swot-logos {
   width: 100%;
   display: flex;
@@ -181,6 +191,7 @@ section.greyback {
 
 .three, .two {
   width: 100%;
+  text-align: center;
 }
 
 .picset .three img {
@@ -240,9 +251,13 @@ img.lrg-img {
 }
 
 #projectnav a {
-  color: #3d3d3d;
+  color: #008297;
   padding: 10px;
   font-weight: 700;
+}
+
+#projectnav a:nth-of-type(2) {
+  color: #868686;
 }
 
 #projectnav a:nth-child(2) {
@@ -250,7 +265,7 @@ img.lrg-img {
 }
 
 #projectnav a:hover {
-  color: #008297;
+  color: #00d3ff;
 }
 
 
@@ -338,6 +353,11 @@ img.lrg-img {
 
 #aetlas .tasks .screens p {
     padding-bottom: 10px;
+}
+
+#aetlas #testing .picset .three img {
+  padding: 0 30px 100px;
+  box-sizing: border-box;
 }
 
   .tasks .screens img {
@@ -428,6 +448,7 @@ img.lrg-img {
 #prep #tracking .picset .two img {
   box-sizing: border-box;
   padding: 0 30px;
+  max-width: 700px;
 }
 
 #prep #features .lrg-img-offset img.nodesk {
@@ -495,6 +516,11 @@ img.lrg-img {
   max-width: 100%;
   max-height: 100vh;
   overflow-y: hidden;
+}
+
+#lohe #testing .picset .three img {
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 
@@ -606,6 +632,16 @@ img.lrg-img {
   font-weight: 200;
 }
 
+#homepage .howzit h5 a {
+  color: #008297;
+  font-weight: 700;
+}
+
+#homepage .howzit a.button {
+  margin: 30px;
+  font-weight:
+}
+
 #homepage .tile {
   width: 100%;
   text-align: center;
@@ -614,7 +650,7 @@ img.lrg-img {
 }
 
 #homepage .scrolldown a {
-  color: #008297;
+  color: #ffffff;
   font-weight: 300;
 }
 
@@ -961,7 +997,7 @@ margin: 0 auto;
 
 
 
-/****************** RESPONSIVE *******************/
+/**************************************** RESPONSIVE ******************************************/
 
 @media screen and (max-width: 1200px) {
 
@@ -1010,7 +1046,7 @@ margin: 0 auto;
       width: 142px;
   }
 
-  /***** LOHE *****/
+  /***** PROJECTS *****/
   #lohe .hero .hero-back {
     height: 65vh;
   }
@@ -1308,7 +1344,10 @@ margin: 0 auto;
     margin: 0;
   }
 
-
+  #aetlas #testing .picset .three img {
+    padding: 0 15px 50px;
+    box-sizing: border-box;
+  }
   /***** PREP *****/
 
   #prep .hero .hero-right img {
@@ -1367,6 +1406,16 @@ margin: 0 auto;
   #prep #tracking .picset .two img {
     box-sizing: border-box;
     padding: 0 30px;
+  }
+
+  /******* LOHE *******/
+  #lohe #testing .picset .three img {
+    padding: 0 15px 30px;
+    box-sizing: border-box;
+  }
+
+  #lohe #testing .picset .three img:last-of-type {
+    padding-bottom: 0;
   }
 
 }
