@@ -306,6 +306,10 @@ img.lrg-img {
   margin: 0 auto;
 }
 
+#aetlas #cardsort img.lrg-img {
+  margin: 0 auto 100px;
+}
+
 #aetlas #testing img.lrg-img {
   max-width: 1200px;
 }
@@ -358,8 +362,13 @@ img.lrg-img {
 }
 
 #aetlas #testing .picset .three img {
-  padding: 0 30px 100px;
+  padding: 0 30px;
   box-sizing: border-box;
+}
+
+#aetlas #prototype .lrg-img {
+  max-width: 1700px;
+  padding: 0 30px;
 }
 
   .tasks .screens img {
@@ -1350,6 +1359,10 @@ margin: 0 auto;
   #aetlas #testing .picset .three img {
     padding: 0 15px 50px;
     box-sizing: border-box;
+  }
+
+  #aetlas #testing .picset .three img:last-of-type {
+    padding: 0 15px 0;
   }
   /***** PREP *****/
 
